@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #A57982;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.text h1 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.text p {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.btn {
+    display: flex;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.btn button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #B98EA7;
+    color: white;
+    border-radius: 10px 0px 15px;
+    border: 1px solid #F0D3F7;
+    cursor: pointer;
+    position: relative;
+}
+
+.no {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text h1 {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text p {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .img img {
+        width: 250px;
+        height: 250px;
+        padding: 15px;
+    }
+    
+    .btn {
+        gap: 25px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .btn button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    
+    .text h1 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .text p {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    
+    .img img {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+    
+    .btn {
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .btn button {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .text h1 {
+        font-size: 16px;
+    }
+    
+    .img img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .btn {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
